@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:  rgb(12, 98, 124) ; 
+    line-height: 30px;
+    background-image: url(img/Manos_gato.jpg);
+}
+header{
+    box-shadow: 0 2px 5px rgba(0, 0,0,0);
+    background-image: url(img/Manos_gato.jpg);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10PX 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.Logo{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.navegacion-liks {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+.navegacion-liks a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navegacion-links a:hover{
+    color: rgb(249, 145, 8);
+    transform: scale(1.2);
+}
+
+#Fondo{
+    padding-top: 10px;
+    min-height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ), url(img/Manos_gato.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(249, 145, 8);
+    padding: 10px 10px;
+}
+#Fondo h1 { 
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+#Manada {
+        padding: 30px 10px;
+        max-width: 1200px;
+        margin: 0 auto;
+        
+}
+
+#Manada h2{
+    text-align: center;
+    margin-bottom: 15px;
+    color: aliceblue;
+    font-size: 35px;
+    padding: 50px;
+
+}
+.Momentos_chicos{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 20px;
+
+}
+.Seccion_chicos{
+    background: rgb(231, 162, 43);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0,0,0);
+    padding: 5px;
+}
+
+.Seccion_chicos:hover{
+    transform: translateY(-10px);
+}
+
+.Seccion_chicos img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Seccion_chicos h3{
+    padding: 5px;
+    color: #333;
+}
+
+
+.Momentos_chicos button{
+    margin: 10px;
+    padding: 10px 5px;
+    background-color: #333;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Seccion_chicos button:hover{
+    background-color: #000;
+
+}
+
+/* TEAMS */
+
+#equipos{
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#equipos h2{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.Grid_teams{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    gap: 30px;
+}
+
+/* CARD - TARJETAS CON LAS IMAGENES DE LOS CHICOS */ 
+
+.Card_team{
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.Card_team:hover{
+    transform: translateY(-10px);
+}
+
+.Card_team img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    background-position: center center;
+}
+
+.Card_team h3{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 28px;
+    color: #333;
+}
+
+.Card_team p{
+    padding: 20px;
+    text-align: center;
+}
+
+.Card_team button{
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+.Card_team a{
+    text-decoration:none;
+}
+
+.Card_team button:hover{
+    background-color: rgb(249, 145, 8);
+    
+}
+
+
+/* PERFIL */
+
+#Perfil{
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+
+/* PERFIL*/
+
+#Perfil{
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 40px;
+}
+
+/* COLUMNA FOTO */
+
+.Foto_Animal{
+    background-color: rgba(255,255,255,0.92);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    height: fit-content;
+    position: sticky;
+    top: 120px;
+}
+
+/* FOTO PRINCIPAL */
+
+.Foto_Principal{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.Foto_Animal h2{
+
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 35px;
+}
+
+/* ALBUM */
+
+.Album_Fotos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+.Album_Fotos img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.Album_Fotos img:hover{
+    transform: scale(1.05);
+}
+
+/* INFORMACION */
+
+.Info_Animal h1{
+
+    color: white;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+/* GRID DATOS */
+
+.Datos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
+
+/* CAJAS */
+
+.Caja_Dato{
+    background-color: rgba(255,255,255,0.92);
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.Caja_Dato:hover{
+    transform: translateY(-5px);
+}
+
+.Caja_Dato h3{
+    color: rgb(249,145,8);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.Caja_Dato p{
+    color: #333;
+    font-size: 16px;
+}
+
+
+/*Curiosidades */
+
+#curiosidad{
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+#curiosidad h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.Curiosidad{
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+
+footer{
+    background-color: #333;
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
+}
+
+@media(max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navegacion-links{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Fondo h1{
+        font-size: 45px;
+    }
+
+    .Fondo p{
+        font-size: 18px;
+    }
+
+    section h2{
+        font-size: 30px;
+    }
+
+/* RESPONSIVE TARJETAS */
+
+@media(max-width:900px){
+
+    #Perfil{
+        grid-template-columns: 1fr;
+    }
+
+    .Foto_Animal{
+        position: static;
+    }
+
+    .Info_Animal h1{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .Foto_Principal{
+        height: 350px;
+    }
+}
+
+}
+
